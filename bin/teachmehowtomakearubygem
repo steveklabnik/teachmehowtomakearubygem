@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+begin
+  require 'teachmehowtomakearubygem'
+  require 'launchy'
+rescue LoadError
+  require 'rubygems'
+  require 'teachmehowtomakearubygem'
+  require 'launchy'
+end
+
+Launchy.open(Teachmehowtomakearubygem::PRESENTATION_URL)
